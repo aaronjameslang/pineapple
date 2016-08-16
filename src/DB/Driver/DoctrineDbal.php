@@ -245,11 +245,11 @@ class DoctrineDbal extends Common
         }
 
         // @todo: doctrine? ensure we're using mysql?
-        if (!$this->options['result_buffering']) {
-            $this->connection->setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, false);
-        } else {
-            $this->connection->setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, true);
-        }
+        //if (!$this->options['result_buffering']) {
+        //    $this->connection->setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, false);
+        //} else {
+        //    $this->connection->setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, true);
+        //}
 
         $result = $this->connection->query($query);
 
